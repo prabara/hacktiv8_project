@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Islamic AI Chatbot</title>
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Background Overlay -->
+  <div class="overlay"></div>
+
+  <!-- Islamic Static Page -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>🕌 Islamic AI Assistant</h1>
+      <p>
+        Temukan jadwal sholat, jadwal puasa, doa sehari-hari dan informasi islami
+        secara interaktif.
+      </p>
+
+      <div class="location-box">
+        <h3>📍 Lokasi Anda</h3>
+        <p id="location">Mendeteksi lokasi...</p>
+      </div>
+
+      <div class="prayer-box">
+        <h3>🕋 Jadwal Sholat Hari Ini</h3>
+
+        <div class="prayer-list">
+          <div>Subuh <span id="fajr">-</span></div>
+          <div>Dzuhur <span id="dhuhr">-</span></div>
+          <div>Ashar <span id="asr">-</span></div>
+          <div>Maghrib <span id="maghrib">-</span></div>
+          <div>Isya <span id="isha">-</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating Chatbot -->
+  <div class="chat-container">
+
+    <div class="chat-header">
+      Islamic AI Chatbot
+    </div>
+
+    <div class="chat-box" id="chatBox">
+      <div class="message bot">
+        Assalamu’alaikum 👋 Ada yang bisa saya bantu? tanyakan jadwal puasa, doa sehari hari, dan informasi islami.
+      </div>
+    </div>
+
+    <form id="chatForm" class="chat-input">
+      <input
+        type="text"
+        id="messageInput"
+        placeholder="Ketik pesan..."
+        autocomplete="off"
+      />
+      <button type="submit">Kirim</button>
+    </form>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
